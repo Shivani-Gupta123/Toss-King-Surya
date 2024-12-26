@@ -9,7 +9,7 @@ html {
   height: 110%;
   margin: 0px;
   padding: 35px;
-  background: url('back.jpg') no-repeat center center;
+ background-color: #000;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -192,7 +192,10 @@ h4 {
   }
 
   .conent{
-    margin-top: 30px;
+    margin-top: 80px;
+  }
+  .h4{
+    margin-bottom: -50px;
   }
 }
 
