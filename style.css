@@ -5,11 +5,11 @@ html {
   padding: 0;
 }
 
-.hero {
+/* .hero {
   position: relative;
   margin: 0px;
-  min-height: 600px;
-  padding: 35px;
+  min-height: 300px;
+  padding: 30px;
  background-color: black;
   background-size: cover;
   display: flex;
@@ -18,7 +18,7 @@ html {
   align-items: center;
   text-align: center;
   z-index: 2;
-}
+} */
 
 /* .hero::before {
   content: "";
@@ -44,6 +44,7 @@ html {
   align-items: center;
   text-align: center;
   z-index: 2;
+  margin-top: -30px;
 }
 
 /* Remove unnecessary margin */
@@ -180,7 +181,7 @@ h4 {
 }
 
 .button2 {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 80%;
 }
 
@@ -244,8 +245,8 @@ h4 {
 @media (max-width: 480px) {
   .heading1 {
     font-size: 1.8rem;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
 
   h4 {
@@ -258,17 +259,17 @@ h4 {
 
   .button2{
     width: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .button2 a {
-    font-size: 20pxpx;
+    font-size: 20px;
     padding: 5px 40px;
 
   }
 
   .button1 a {
-    font-size: 20px;
+    font-size: 10px;
     padding: 5px 0;
   }
 
@@ -277,14 +278,14 @@ h4 {
   }
 
   .points li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .conent{
     margin-top: 10px;
   }
   .h4{
-    margin-bottom: -50px;
+    margin-bottom: 20px;
   }
 }
 
