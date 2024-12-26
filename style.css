@@ -1,15 +1,16 @@
 body,
 html {
+  overflow-y: hidden;
   margin: 0;
   padding: 0;
 }
 
 .hero {
   position: relative;
-  height: 110%;
   margin: 0px;
+  min-height: 600px;
   padding: 35px;
- background-color: #000;
+ background-color: black;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@ html {
   z-index: 2;
 }
 
-.hero::before {
+/* .hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -28,7 +29,96 @@ html {
   height: 110vh;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: -1;
+} */
+
+.hero {
+  position: relative;
+  margin: 0px;
+  min-height: 100vh; /* Use min-height instead of a fixed height */
+  padding: 35px;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
 }
+
+/* Remove unnecessary margin */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically on small screens */
+  justify-content: center; /* Ensure content is centered */
+}
+
+.counter {
+  text-align: center;
+  margin-bottom: 20px; /* Add some space between counter and points */
+}
+
+.points {
+  flex: 2;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Adjust layout for mobile view */
+@media (max-width: 480px) {
+  .heading1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .paragraph {
+    font-size: 1.5rem;
+  }
+
+  .button2 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .button2 a {
+    font-size: 20px;
+    padding: 5px 40px;
+  }
+
+  .button1 a {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+
+  .counter {
+    font-size: 1.4rem;
+  }
+
+  .points li {
+    margin-bottom: 20px;
+  }
+
+  .conent {
+    margin-top: 10px;
+  }
+
+  .h4 {
+    margin-bottom: -50px;
+  }
+
+  /* Ensure no vertical overflow in mobile view */
+  body, html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+}
+
 
 .heading1 {
   font-family: 'Oswald', sans-serif;
@@ -51,7 +141,6 @@ h4 {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   color: #fff;
-  margin-top: 0;
 }
 
 #countdown,  #countdown2{
@@ -65,6 +154,7 @@ h4 {
 
 #countdown2{
  font-size: 1.5rem;
+
 }
 
 .points {
@@ -154,8 +244,8 @@ h4 {
 @media (max-width: 480px) {
   .heading1 {
     font-size: 1.8rem;
-    margin-bottom: 30px;
-    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   h4 {
@@ -184,7 +274,6 @@ h4 {
 
   .counter {
     font-size: 1.4rem;
-    margin-top: 20px;
   }
 
   .points li{
@@ -192,7 +281,7 @@ h4 {
   }
 
   .conent{
-    margin-top: 80px;
+    margin-top: 10px;
   }
   .h4{
     margin-bottom: -50px;
