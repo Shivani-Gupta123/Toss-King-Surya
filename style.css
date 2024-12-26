@@ -2,12 +2,11 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: auto;
 }
 
 .hero {
   position: relative;
-  height: auto;
+  height: 100%;
   margin: 0px;
   padding: 35px;
   background: url('back.jpg') no-repeat center center;
@@ -26,7 +25,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: -1;
 }
@@ -35,8 +34,8 @@ html {
   font-family: 'Oswald', sans-serif;
   font-size: 2.0rem;
   color: #fff;
-  margin-top: 5px;
-  margin-bottom: 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -155,6 +154,8 @@ h4 {
 @media (max-width: 480px) {
   .heading1 {
     font-size: 1.8rem;
+    margin-bottom: 30px;
+    margin-top: 40px;
   }
 
   h4 {
@@ -162,11 +163,12 @@ h4 {
   }
 
   .paragraph {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .button2{
     width: 90%;
+    margin-bottom: 20px;
   }
 
   .button2 a {
@@ -183,6 +185,10 @@ h4 {
   .counter {
     font-size: 1.4rem;
     margin-top: 20px;
+  }
+
+  .points li{
+    margin-bottom: 20px;
   }
 }
 
